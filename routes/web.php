@@ -15,10 +15,14 @@ Route::middleware('guest')->group(function () {
 
     Route::post('/login', [LoginController::class, 'login'])->name('login.attempt');
 
-    Route::get('/register', [RegisterController::class, 'index'])->name('login');
+    Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
     Route::post('/register', [RegisterController::class, 'register'])->name('register.attempt');
 
     Route::get('/forgot-password', [ForgotPasswordController::class, 'index'])->name('forgot-password');
     Route::get('/reset-password', [ResetPasswordController::class, 'index'])->name('reset-password');
+});
+
+Route::middleware('auth')->group(function () {
+//   
 });

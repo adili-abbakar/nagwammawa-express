@@ -11,4 +11,9 @@ class RegisterController extends Controller
     {
         return view('auth.register');
     }
+
+    public function register(Request $request)
+    {
+        return redirect()->intended(route('home'))->with(['success', 'Logged Successfully']);
+    }
 }
