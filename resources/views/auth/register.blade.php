@@ -9,23 +9,39 @@
                 <header>
                     <h2>Nagwammawa Express</h2>
                     <hr />
-                    <h4>Register</h4>
+                    <h3>Register</h3>
                 </header>
                 <form method="post" action="{{ route('register.attempt') }}">
                     @csrf
                     <div class="row gtr-uniform">
                         <div class="col-6 col-12-xsmall">
-                            <input type="text" name="name" id="name" value="" placeholder="Name" />
+                            <label for="name" class="label">Name:</label>
+                            <input type="text" name="name" id="name" value="{{ old('name') }}"
+                                @error('name')  class="error-boder-color" @enderror placeholder="Name Surname Lastname" />
+                            @error('name')
+                                <small class="error-text-color error-text-size"> {{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="col-6 col-12-xsmall">
-                            <input type="email" name="email" id="email" value="" placeholder="Email" />
+                            <label for="email" class="label">Email:</label>
+                            <input type="email" name="email" id="" value="{{ old('email') }}"
+                                @error('email')  class="error-boder-color" @enderror placeholder="eaxmple@email.com" />
+                            @error('email')
+                                <small class="error-text-color error-text-size"> {{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="col-6 col-12-xsmall">
-                            <input type="password" name="password" id="password" value="" placeholder="password" />
+                            <label for="password" class="label">Password:</label>
+                            <input type="password" name="password" id="password"
+                                @error('password')  class="error-boder-color" @enderror placeholder="••••••••" />
+                            @error('password')
+                                <small class="error-text-color error-text-size"> {{ $message }}</small>
+                            @enderror
                         </div>
                         <div class="col-6 col-12-xsmall">
-                            <input type="password" name="confirm_password" id="confirm_password" value=""
-                                placeholder="Confirm password" />
+                            <label for="confirm_password" class="label">Confirm Password:</label>
+                            <input type="password" name="password_confirmation" id="confirm_password"
+                                placeholder="••••••••" />
                         </div>
                         <!-- Break -->
 

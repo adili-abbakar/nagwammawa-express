@@ -21,6 +21,8 @@
             <li><a href="/login.html">Get Quote</a></li>
             @guest
                 <li><a href="{{ route('login') }}">Login</a></li>
+            @else
+                <li><a href="{{ route('login') }}">Logout</a></li>
             @endguest
         </ul>
     </nav>
