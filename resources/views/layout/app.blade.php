@@ -21,9 +21,15 @@
             <li><a href="/login.html">Get Quote</a></li>
             @guest
                 <li><a href="{{ route('login') }}">Login</a></li>
-            @else
-                <li><a href="{{ route('login') }}">Logout</a></li>
             @endguest
+            @auth
+                <li>
+                    <form action="{{ route('logout') }}" method="POST" style="display:inline;">
+                        @csrf
+                        <button type="submit" class="button fit">Logout</button>
+                    </form>
+                </li>
+            @endauth
         </ul>
     </nav>
     @yield('page-content')

@@ -20,7 +20,8 @@ class LoginController extends Controller
             'password' => 'required',
         ]);
 
-        if (Auth::attempt($credentials, $request->filled('remember'))) {
+        //  $request->filled('remember')
+        if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
             return redirect()->intended(route('home'))->with(['success', 'Login successful! You are now logged in.']);
@@ -29,5 +30,14 @@ class LoginController extends Controller
         return back()->withErrors([
             'login' => 'Incorrect email or password'
         ])->onlyInput('email');
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect()->route('home')->with(['success', 'Logout successful! You are now logged out.']);
     }
 }
