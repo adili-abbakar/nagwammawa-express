@@ -30,6 +30,14 @@
                                 <small class="error-text-color error-text-size"> {{ $message }}</small>
                             @enderror
                         </div>
+                        <div class="col-6 col-12-xsmall phone-cnt">
+                            <label for="email" class="label">Phone:</label>
+                            <input type="tel" name="phone_number" id="phone" value="{{ old('phone_number') }}"
+                                @error('phone_number')  class="error-boder-color" @enderror placeholder="+123 123456789" />
+                            @error('phone_number')
+                                <small class="error-text-color error-text-size"> {{ $message }}</small>
+                            @enderror
+                        </div>
                         <div class="col-6 col-12-xsmall">
                             <label for="password" class="label">Password:</label>
                             <input type="password" name="password" id="password"
@@ -57,4 +65,21 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const input = document.querySelector("#phone"); // your input field
+            const iti = window.intlTelInput(input, {
+                initialCountry: "ng", // default country
+                preferredCountries: ["ng", "gh", "ci", "sn"], // quick picks
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+            });
+
+            // Format number before submitting
+            document.querySelector("form").addEventListener("submit", function() {
+                input.value = iti.getNumber(); // E.164 format (+2348012345678)
+            });
+        });
+    </script>
+
+
 @endsection
