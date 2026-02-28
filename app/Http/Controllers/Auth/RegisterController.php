@@ -29,13 +29,12 @@ class RegisterController extends Controller
             'phone_number.phone' => 'Please enter a valid international phone number starting with + (e.g. +2348012345678).',
         ]);
 
-
-        $normalizedPhone = PhoneNumber::make($validated['phone_number'])->formatE164();
+        // $normalizedPhone = PhoneNumber::make($validated['phone_number'])->formatE164();
 
         $user = User::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
-            'phone_number' => $$validated['phone_number'],
+            'phone_number' => $validated['phone_number'],
             'password' => Hash::make($validated['password']),
         ]);
 

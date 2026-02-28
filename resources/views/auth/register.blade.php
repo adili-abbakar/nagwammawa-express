@@ -67,16 +67,18 @@
     </section>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const input = document.querySelector("#phone"); // your input field
+            const input = document.querySelector("#phone");
             const iti = window.intlTelInput(input, {
-                initialCountry: "ng", // default country
-                preferredCountries: ["ng", "gh", "ci", "sn"], // quick picks
-                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+                initialCountry: "ng",
+                preferredCountries: ["ng", "gh", "ci", "sn"],
+                nationalMode: false, // force international format
+                separateDialCode: true, // show country code visibly
+                utilsScript: "{{ asset('js/intl-tel-input/utils.js') }}"
             });
 
-            // Format number before submitting
             document.querySelector("form").addEventListener("submit", function() {
-                input.value = iti.getNumber(); // E.164 format (+2348012345678)
+                // Always submit the full international number
+                input.value = iti.getNumber(intlTelInputUtils.numberFormat.E164);
             });
         });
     </script>

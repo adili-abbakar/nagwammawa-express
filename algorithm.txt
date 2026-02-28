@@ -1,0 +1,173 @@
+===============================
+PROJECT BLUEPRINT: NAGWAMMAWA EXPRESS WEBSITE
+===============================
+
+1. ENVIRONMENT SETUP
+--------------------
+- Install Laravel (PHP framework).
+- Configure .env file with database credentials.
+- Set up MySQL database.
+- Install Tailwind CSS for frontend styling.
+- Configure Git/GitHub for version control.
+- Obtain Google Maps API key.
+
+2. DATABASE SCHEMA
+------------------
+Tables and fields:
+
+company_info
+- id (PK)
+- name
+- trading_name
+- year_established
+- vision
+- mission
+- contact
+- address
+
+services
+- id (PK)
+- service_name
+- description
+- icon_url
+
+industries
+- id (PK)
+- industry_name
+- description
+
+shipments
+- id (PK)
+- tracking_number (unique)
+- sender_name
+- receiver_name
+- origin
+- destination
+- current_location
+- status (pending, in_transit, delivered)
+- estimated_delivery
+- created_at
+
+quotes
+- id (PK)
+- customer_name
+- email
+- phone
+- pickup_location
+- destination
+- weight
+- service_type
+- status (pending, approved, rejected)
+- price
+- created_at
+
+contacts
+- id (PK)
+- name
+- email
+- phone
+- message
+- created_at
+
+users
+- id (PK)
+- name
+- email
+- password (hashed)
+- role (admin, staff)
+- created_at
+
+3. PAGE ALGORITHMS
+------------------
+
+HOME PAGE
+- Fetch company_info.
+- Display hero banner with mission statement.
+- Show services summary.
+- Quick links: Track Shipment, Get a Quote.
+- Footer with contact info.
+
+ABOUT US
+- Query company_info for vision, mission, history.
+- Render company overview.
+- Optional: display team members.
+
+SERVICES
+- Fetch services table.
+- Display service cards with description and icon.
+
+INDUSTRIES SERVED
+- Query industries table.
+- Display industry categories with logistics solutions.
+
+TRACK SHIPMENT
+- User enters tracking number.
+- Validate input.
+- Query shipments table by tracking_number.
+- Display shipment status, location (Google Maps API).
+- If not found → show error message.
+
+GET A QUOTE
+- User fills form (pickup, destination, weight, service type).
+- Save request in quotes table.
+- Notify admin via email.
+- Admin updates quote with price.
+- Customer notified via email.
+
+CONTACT US
+- User submits contact form.
+- Save message in contacts table.
+- Send email notification to admin.
+- Admin replies via dashboard.
+
+4. FEATURE ALGORITHMS
+---------------------
+
+SHIPMENT TRACKING SYSTEM
+- Input: tracking number.
+- Validate format.
+- Query shipments table.
+- Return JSON with status, current location, estimated delivery.
+- Display on frontend with Google Maps API.
+
+QUOTE REQUEST SYSTEM
+- Input: shipment details.
+- Save to quotes table.
+- Notify admin.
+- Admin calculates cost → updates record.
+- Customer notified via email.
+
+ADMIN PANEL
+- Login authentication.
+- CRUD operations for:
+  - Services
+  - Industries
+  - Shipments
+  - Quotes
+  - Contacts
+- Dashboard with analytics.
+
+5. DEVELOPMENT TIMELINE
+-----------------------
+
+WEEK 1–3 (Planning & Design)
+- Build wireframes for all pages.
+- Set up Laravel project, Tailwind CSS, MySQL schema.
+- Create migration files for all tables.
+
+WEEK 4–7 (Development)
+- Implement Home, About Us, Services, Industries pages.
+- Build shipment tracking module.
+- Build quote request module.
+- Build contact form.
+- Develop admin panel.
+
+WEEK 8–9 (Testing & Deployment)
+- Unit testing for forms and tracking.
+- Security testing (SQL injection, XSS).
+- SEO setup (meta tags, sitemap).
+- Deploy to VPS/cloud hosting.
+
+===============================
+END OF BLUEPRINT
+===============================
