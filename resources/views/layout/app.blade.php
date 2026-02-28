@@ -4,7 +4,7 @@
 @section('content')
     <!-- Header -->
     <header id="header">
-        <a class="logo" href="/index.html">Nagwammawa Express</a>
+        <a class="logo" href="{{ route('home') }}">Nagwammawa Express</a>
         <nav>
             <a href="#menu">Menu</a>
         </nav>

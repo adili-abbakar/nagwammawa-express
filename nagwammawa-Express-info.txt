@@ -1,0 +1,214 @@
+﻿1. Complete Website Structure (Menu + Pages)
+Main Menu
+
+Home
+
+About Us
+
+Services
+
+Industries Served
+
+Track Shipment
+
+Get a Quote
+
+Contact Us
+
+Footer Menu
+
+Privacy Policy
+
+Terms & Conditions
+
+Safety & Compliance
+
+Careers
+
+FAQs
+
+Page Breakdown
+Home
+
+Hero section (headline + CTA)
+
+Services overview
+
+Why choose us
+
+Coverage map
+
+Testimonials
+
+Call-to-action
+
+About Us
+
+Company overview
+
+Vision & Mission
+
+Core Values
+
+Corporate structure (Nagwammawa & Sons Nig. Ltd)
+
+Compliance & registrations
+
+Services
+
+Sub-pages:
+
+Passenger Transport
+
+Freight & Cargo Logistics
+
+Warehousing & Storage
+
+Customs Clearance
+
+Distribution & Last-Mile Delivery
+
+Cross-Border Logistics (West Africa)
+
+Industries Served
+
+Agriculture
+
+Manufacturing
+
+Retail & E-commerce
+
+Construction
+
+Oil & Gas
+
+Track Shipment
+
+Tracking ID input
+
+Shipment status display
+
+Get a Quote
+
+Online quote form
+
+Cargo upload
+
+Auto-response confirmation
+
+Contact Us
+
+Phone numbers
+
+Email
+
+WhatsApp
+
+Office locations + map
+
+LOGISTICS WEBSITE CONTENT COLLECTION FORM
+Company Name:NAGWAMMAWA AND SONS NIG LTD ________________________________
+Website (if any):NIL ________________________________
+Date:07/02/2026 ________________________________
+
+1. COMPANY INFORMATION
+Official Company Name:NAGWAMMAWA AND SONS NIG LTD ________________________________
+Brand / Trading Name:NAGWAMMAWA EXPRESS ________________________________
+Parent Company (if any):NIL ________________________________
+Year Established:2026 ________________________________
+CAC Registration Number: ________________________________
+Head Office Address:SOKOTO DOGON 4/6 MAIDUGURI ROAD________________________________
+Branch Offices (if any): ________________________________
+Phone Number(s):08107186278 ________________________________
+WhatsApp Number:+08107186278 ________________________________
+Official Email Address:bellosanda08107@gmail.com ________________________________
+Working Hours:247 ________________________________
+
+2. ABOUT THE COMPANY
+Company Overview (Short – 2–3 sentences):
+______________________________________________________
+Company Overview (Long – paragraph):
+______________________________________________________
+Vision:Vision:
+To be the leading transport and logistics provider in Nigeria and the West African sub-region, recognized for safety, reliability, innovation, and excellence in customer service.
+______________________________________________________
+Mission:
+To provide safe, reliable, and efficient transport and logistics solutions that connect communities and businesses across Nigeria and the West African sub-region, while delivering exceptional customer service, embracing innovation, and maintaining the highest standards of professionalism.
+______________________________________________________
+Core Values (list):
+______________________________________________________
+
+3. SERVICES OFFERED
+Tick and describe all that apply:
+☐ Passenger Transport
+Description: and doods delivery __________________________________________
+☐ Freight & Cargo Logistics
+Description:yes __________________________________________
+☐ Warehousing & Storage
+Description:yes __________________________________________
+☐ Customs Clearance
+Description:yes __________________________________________
+☐ Distribution & Last-Mile Delivery
+Description:yes __________________________________________
+☐ Cross-Border Logistics
+Description:yes __________________________________________
+Other Services (if any):construction _________________________________
+
+4. COVERAGE AREAS
+States / Cities in Nigeria served:all state _______________________
+West African Countries Covered:yes _______________________
+Cross-border routes (optional):yes ________________________
+
+5. FLEET & INFRASTRUCTURE
+Types of Vehicles: ____________________________________
+Fleet Size (optional): _________________________________
+Warehousing Locations: _______________________________
+Special Equipment (cold chain, heavy duty, etc.): ________
+
+6. SHIPMENT TRACKING
+Tracking System Type: ☐ Manual ☐ Automated
+Shipment Status Levels (e.g. In Transit, Delivered): yes_____
+
+7. QUOTE / BOOKING FORM DETAILS
+Required Customer Info (tick):
+☐ Name ☐ Phone ☐ Email ☐ Pickup Location ☐ Delivery Location ☐ Cargo Type ☐ Weight ☐ Date
+All 
+8. INDUSTRIES SERVED
+☐ Agriculture ☐ Manufacturing ☐ Retail & E-commerce ☐ Construction ☐ Oil & Gas ☐ Others
+Yes
+9. TRUST & CREDIBILITY
+Licenses / Permits:yes _________________________________
+Insurance Coverage:yes _________________________________
+Certifications (if any):yes _____________________________
+Testimonials available? ☐ Yes ☐ No
+Yes
+10. VISUAL ASSETS
+Company Logo available? ☐ Yes ☐ No
+Brand Colors:yes _______________________________________
+Real Photos (fleet, warehouse, staff)? ☐ Yes ☐ No.:yes
+
+11. LEGAL & COMPLIANCE
+☐ Privacy Policy
+☐ Terms & Conditions
+☐ Cargo Liability Policy
+Yes
+12. CONTACT & SUPPORT
+Customer Support Email: _____________________________
+Emergency Contact (optional): ________________________
+WhatsApp Chat on website? ☐ Yes ☐ No
+Yes
+13. SOCIAL & MARKETING
+Facebook: __________________________
+Instagram: _________________________
+LinkedIn: __________________________
+Google Maps Business Location: ______________________
+
+14. ADMIN & ACCESS
+Website Admin Name: ________________________________
+Admin Email: ______________________________________
+Staff Access Required? ☐ Yes ☐ No
+
+15. FUTURE FEATURES (OPTIONAL)
+☐ Online Payments ☐ Client Dashboard ☐ Mobile App ☐ ERP/CRM Integration
+All
+Prepared for: Logistics Website Development
