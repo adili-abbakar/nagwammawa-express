@@ -12,8 +12,8 @@
     <!-- Nav -->
     <nav id="menu">
         <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="{{ route('home') }}">Home</a></li>
+            <li><a href="{{ route('about') }}">About Us</a></li>
             <li><a href="/services.html">Services</a></li>
             <li><a href="/industries.html">Industries </a></li>
             <li><a href="/track-shipments.html">Track Shipment</a></li>
@@ -47,7 +47,8 @@
                 <section>
                     <h4>Quick Links</h4>
                     <ul class="alt">
-                        <li><a href="/about.html">About</a></li>
+                        <li><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('about') }}">About Us</a></li>
                         <li><a href="">Services.</a></li>
                         <li><a href="#">Contact.</a></li>
                         <li><a href="/industries.html">Industries.</a></li>
