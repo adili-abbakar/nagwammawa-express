@@ -6,15 +6,15 @@
 @section('page-content')
     <!-- Banner -->
     <section id="banner">
-        <div class="inner">
+        {{-- <div class="inner">
             <h1>Nagwammawa Express</h1>
             <h2>Reliable Transport & Logistics Solutions</h2>
             <p>
                 Providing safe, efficient, and customer-focused transport and
                 logistics services across Nigeria and the West African sub-region.
             </p>
-        </div>
-        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+        </div> --}}
+        {{-- <video autoplay loop muted playsinline src="images/banner.mp4"></video> --}}
     </section>
 
     <!-- Highlights -->
@@ -23,10 +23,10 @@
             <header class="special">
                 <h2>Industries We Serve</h2>
                 <!-- <p>
-                In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim
-                aliquet. Accumsan ac integer lobortis commodo ornare aliquet
-                accumsan erat tempus amet porttitor.
-              </p> -->
+                    In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim
+                    aliquet. Accumsan ac integer lobortis commodo ornare aliquet
+                    accumsan erat tempus amet porttitor.
+                  </p> -->
             </header>
             <div class="highlights">
                 <section>
@@ -95,15 +95,9 @@
     <!-- CTA -->
     <section id="cta" class="wrapper">
         <div class="inner">
-            <h2>Curabitur ullamcorper ultricies</h2>
+            <h2>Our Mission</h2>
             <p>
-                Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio
-                porttitor sem non mi integer non faucibus ornare mi ut ante amet
-                placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan
-                varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum
-                ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
-                iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed
-                amet praesent. Nunc lacinia ante nunc ac gravida.
+                {{ $company->mission }}
             </p>
         </div>
     </section>
@@ -112,11 +106,9 @@
     <section class="wrapper">
         <div class="inner">
             <header class="special">
-                <h2>Faucibus consequat lorem</h2>
+                <h2>What Our Clients Say</h2>
                 <p>
-                    In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim
-                    aliquet. Accumsan ac integer lobortis commodo ornare aliquet
-                    accumsan erat tempus amet porttitor.
+                    Trusted by businesses across multiple industries
                 </p>
             </header>
             <div class="testimonials">

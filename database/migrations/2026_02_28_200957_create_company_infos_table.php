@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('name');
             $table->string('trading_name')->nullable();
             $table->integer('year_established')->nullable();
-            $table->string('vision')->nullable();
-            $table->string('mission')->nullable();
+            $table->longText('vision')->nullable();
+            $table->longText('mission')->nullable();
             $table->string('contact')->nullable();
-            $table->string('head_office')->nullable();
+            $table->text('head_office')->nullable();
             $table->timestamps();
         });
     }
