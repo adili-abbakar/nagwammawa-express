@@ -15,7 +15,7 @@
                         <li><a href="{{ route('services') }}">Services.</a></li>
                         <li><a href="#">Contact.</a></li>
                         <li><a href="{{ route('industries') }}">Industries.</a></li>
-                        <li><a href="/track-shipments.html">Track Shipments</a></li>
+                        <li><a href="{{ route('track-shipment') }}">Track Shipments</a></li>
                     </ul>
                 </section>
                 <section>
