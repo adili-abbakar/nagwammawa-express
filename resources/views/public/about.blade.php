@@ -49,16 +49,14 @@
                                 <h2><b>Company Details</b></h2>
                                 <p>
                                     <strong>Company Name:</strong>
-                                    Nagwammawa & Sons Nigeria Limited
+                                    {{ $company->name }}
                                 </p>
                                 <p>
-                                    <strong>Brand: </strong>Nagwammawa
-                                    Express
+                                    <strong>Brand: </strong>{{ $company->trading_name }}
                                 </p>
-                                <p><strong>Founded: </strong> 2026</p>
+                                <p><strong>Founded: </strong> {{ $company->year_established }}</p>
                                 <p>
-                                    <strong>Headquarters: </strong> Sokoto,
-                                    Dogon 4/6 Maiduguri Road
+                                    <strong>Headquarters: </strong> {{ $company->head_office }}
                                 </p>
                                 <p>
                                     <strong>Region: </strong> Nigeria & West
@@ -86,17 +84,9 @@
                             <h2><b>Our mission</b></h2>
                         </header>
                         <p>
-                            To provide exceptional, reliable, and
-                            cost-effective logistics solutions that empower
-                            businesses to grow and succeed across Nigeria
-                            and West Africa.
+                            {{ $company->vision }}
                         </p>
-                        <p>
-                            We are committed to delivering shipments on
-                            time, every time, while maintaining the highest
-                            standards of safety, security, and customer
-                            service.
-                        </p>
+
                     </div>
                 </section>
 
@@ -107,17 +97,9 @@
                             <h2><b>Our Vision</b></h2>
                         </header>
                         <p>
-                            To provide exceptional, reliable, and
-                            cost-effective logistics solutions that empower
-                            businesses to grow and succeed across Nigeria
-                            and West Africa.
+                            {{ $company->vision }}
                         </p>
-                        <p>
-                            We are committed to delivering shipments on
-                            time, every time, while maintaining the highest
-                            standards of safety, security, and customer
-                            service.
-                        </p>
+
                     </div>
                 </section>
             </div>
