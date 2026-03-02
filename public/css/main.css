@@ -3877,3 +3877,17 @@ body.is-menu-visible #menu {
 .error-text-size {
     font-size: 80% !important;
 }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 5px;
+}
+
+.logo-container img {
+  height: 300%;
+  width: auto;
+  object-fit: contain;
+}
