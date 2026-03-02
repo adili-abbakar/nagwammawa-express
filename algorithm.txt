@@ -53,12 +53,16 @@ quotes
 - customer_name
 - email
 - phone
+- company_name
 - pickup_location
 - destination
 - weight
 - service_type
+- dimensions 
 - status (pending, approved, rejected)
 - price
+- special_instructions 
+- special_document 
 - created_at
 
 contacts
