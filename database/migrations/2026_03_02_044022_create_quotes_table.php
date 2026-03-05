@@ -21,7 +21,10 @@ return new class extends Migration
             $table->string('destination');
             $table->decimal('weight', 8, 2);
             $table->string('service_type');
-            $table->string('dimensions')->nullable();
+            $table->string('cargo_type');
+            $table->string('dimension')->nullable();
+            $table->date('pickup_date');
+            $table->date('delivery_date')->nullable();
             $table->enum('status', ['pending', 'approved', 'rejected'])->default('pending');
             $table->decimal('price', 10, 2)->nullable();
             $table->text('special_instructions')->nullable();

@@ -568,9 +568,12 @@ form {
 }
 
 input[type="text"],
+input[type="number"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
+input[type="file"],
+input[type="date"],
 input[type="search"],
 input[type="url"],
 select,
@@ -590,9 +593,12 @@ textarea {
     width: 100%;
 }
 input[type="text"]:invalid,
+input[type="number"]:invalid,
 input[type="password"]:invalid,
 input[type="email"]:invalid,
 input[type="tel"]:invalid,
+input[type="file"]:invalid,
+input[type="date"]:invalid,
 input[type="search"]:invalid,
 input[type="url"]:invalid,
 select:invalid,
@@ -608,9 +614,12 @@ label {
 }
 
 input[type="text"],
+input[type="number"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
+input[type="file"],
+input[type="date"],
 input[type="search"],
 input[type="url"] {
     height: 3.25rem;
@@ -716,9 +725,12 @@ label {
 }
 
 input[type="text"],
+input[type="number"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
+input[type="date"],
+input[type="file"],
 input[type="search"],
 input[type="url"],
 select,
@@ -726,10 +738,14 @@ textarea {
     background-color: rgba(0, 0, 0, 0.075);
     border-color: rgba(0, 0, 0, 0.25);
 }
+
 input[type="text"]:focus,
+input[type="number"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
+input[type="date"]:focus,
 input[type="tel"]:focus,
+input[type="file"]:focus,
 input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
@@ -2632,9 +2648,12 @@ ul.icons li .icon:before {
     color: #ffffff;
 }
 #banner input[type="text"],
+#banner input[type="number"],
 #banner input[type="password"],
 #banner input[type="email"],
 #banner input[type="tel"],
+#banner input[type="file"],
+#banner input[type="date"],
 #banner input[type="search"],
 #banner input[type="url"],
 #banner select,
@@ -2643,10 +2662,13 @@ ul.icons li .icon:before {
     border-color: rgba(255, 255, 255, 0.25);
 }
 #banner input[type="text"]:focus,
+#banner input[type="number"]:focus,
 #banner input[type="password"]:focus,
 #banner input[type="email"]:focus,
 #banner input[type="tel"]:focus,
 #banner input[type="search"]:focus,
+#banner input[type="file"]:focus,
+#banner input[type="date"]:focus,
 #banner input[type="url"]:focus,
 #banner select:focus,
 #banner textarea:focus {
@@ -2948,10 +2970,13 @@ body.is-preload #banner:before {
     color: #ffffff;
 }
 #cta input[type="text"],
+#cta input[type="number"],
 #cta input[type="password"],
 #cta input[type="email"],
 #cta input[type="tel"],
 #cta input[type="search"],
+#cta input[type="file"],
+#cta input[type="date"],
 #cta input[type="url"],
 #cta select,
 #cta textarea {
@@ -2959,10 +2984,13 @@ body.is-preload #banner:before {
     border-color: rgba(255, 255, 255, 0.25);
 }
 #cta input[type="text"]:focus,
+#cta input[type="number"]:focus,
 #cta input[type="password"]:focus,
 #cta input[type="email"]:focus,
 #cta input[type="tel"]:focus,
 #cta input[type="search"]:focus,
+#cta input[type="file"]:focus,
+#cta input[type="date"]:focus,
 #cta input[type="url"]:focus,
 #cta select:focus,
 #cta textarea:focus {
@@ -3138,9 +3166,12 @@ body.is-preload #banner:before {
     color: #ffffff;
 }
 #footer input[type="text"],
+#footer input[type="number"],
 #footer input[type="password"],
 #footer input[type="email"],
 #footer input[type="tel"],
+#footer input[type="date"],
+#footer input[type="file"],
 #footer input[type="search"],
 #footer input[type="url"],
 #footer select,
@@ -3149,9 +3180,12 @@ body.is-preload #banner:before {
     border-color: rgba(255, 255, 255, 0.25);
 }
 #footer input[type="text"]:focus,
+#footer input[type="number"]:focus,
 #footer input[type="password"]:focus,
 #footer input[type="email"]:focus,
 #footer input[type="tel"]:focus,
+#footer input[type="date"]:focus,
+#footer input[type="file"]:focus,
 #footer input[type="search"]:focus,
 #footer input[type="url"]:focus,
 #footer select:focus,
@@ -3417,18 +3451,22 @@ body:before {
     -ms-flex-pack: center;
     background-color: #111111;
     color: rgba(255, 255, 255, 0.5);
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
+
+    -moz-align-items: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-align-items: flex-end;
+    align-items: flex-end;
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
-    justify-content: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+    -moz-justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-justify-content: flex-start;
+    justify-content: flex-start;
     background-image: linear-gradient(
             rgba(17, 17, 17, 0.25),
             rgba(17, 17, 17, 0.25)
@@ -3465,6 +3503,7 @@ body:before {
 #heading h5,
 #heading h6 {
     color: #ffffff;
+    font-weight: bold;
 }
 #heading blockquote {
     border-left-color: rgba(255, 255, 255, 0.25);
@@ -3528,8 +3567,11 @@ body:before {
     color: #ffffff;
 }
 #heading input[type="text"],
+#heading input[type="number"],
 #heading input[type="password"],
 #heading input[type="email"],
+#heading input[type="date"],
+#heading input[type="file"],
 #heading input[type="tel"],
 #heading input[type="search"],
 #heading input[type="url"],
@@ -3539,8 +3581,11 @@ body:before {
     border-color: rgba(255, 255, 255, 0.25);
 }
 #heading input[type="text"]:focus,
+#heading input[type="number"]:focus,
 #heading input[type="password"]:focus,
 #heading input[type="email"]:focus,
+#heading input[type="date"]:focus,
+#heading input[type="file"]:focus,
 #heading input[type="tel"]:focus,
 #heading input[type="search"]:focus,
 #heading input[type="url"]:focus,
@@ -3879,15 +3924,19 @@ body.is-menu-visible #menu {
 }
 
 .logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 5px;
 }
 
 .logo-container img {
-  height: 300%;
-  width: auto;
-  object-fit: contain;
+    height: 300%;
+    width: auto;
+    object-fit: contain;
 }
+
+/* .form-group{
+    border:  rgba(0, 0, 0, 0.25);
+} */

@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
+    <link rel="icon" type="image/svg+xml" href="{{ asset('images/logo.png') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}" />
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" /> --}}
+    <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" />
+
 
 
 </head>
 
 <body class="is-preload">
-    @yield('content')   
-    
+    @yield('content')
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/browser.min.js') }}"></script>
     <script src="{{ asset('js/breakpoints.min.js') }}"></script>

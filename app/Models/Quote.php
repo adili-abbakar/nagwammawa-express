@@ -15,10 +15,13 @@ class Quote extends Model
         'destination',
         'weight',
         'service_type',
-        'dimensions',
+        'cargo_type',
+        'dimension',
         'status',
         'price',
+        'pickup_date',
+        'delivery_date',
         'special_instructions',
-        'special_document',    
+        'special_document',
     ];
 }

@@ -15,6 +15,7 @@
         "vite": "^7.0.7"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4",
         "font-awesome": "^4.7.0",
         "google-libphonenumber": "^3.2.44",
         "intl-tel-input": "^26.7.6"
