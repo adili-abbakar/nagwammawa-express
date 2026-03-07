@@ -12,7 +12,8 @@ class QuoteController extends Controller
      */
     public function index()
     {
-        return view('quote.index');
+        $quotes = Quote::get();
+        return view('quote.index', compact('quotes'));
     }
 
     /**

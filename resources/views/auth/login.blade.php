@@ -7,7 +7,7 @@
         <div class="inner">
             <div class="content">
                 <header>
-                    <h2>Nagwammawa Express</h2>
+                        <h2>Nagwammawa Express</h2>
                     <hr />
                     <h3>Login</h3>
                 </header>

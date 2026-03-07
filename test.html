@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Nagwammawa Express - Premium logistics solutions across Nigeria and West Africa"
+        />
+        <title>Nagwammawa Express - Logistics & Transportation</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <style>
+            :root {
+                --cream: #f5f1ed;
+                --dark: #1a1a1a;
+                --sage: #556b4d;
+                --light-gray: #e8e4df;
+            }
+            * {
+                transition: all 0.4s ease;
+            }
+            body {
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                background-color: var(--cream);
+                color: var(--dark);
+            }
+            .btn-sage {
+                background-color: var(--sage);
+                color: white;
+                padding: 12px 28px;
+                border-radius: 4px;
+                display: inline-block;
+                font-weight: 500;
+            }
+            .btn-sage:hover {
+                background-color: #4a5942;
+            }
+            .border-sage {
+                border-color: var(--sage);
+            }
+            .text-sage {
+                color: var(--sage);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="sticky top-0 z-50 bg-white shadow-sm">
+            <div
+                class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between"
+            >
+                <a
+                    href="index.html"
+                    class="text-2xl font-light text-dark flex items-center gap-3"
+                >
+                    <i
+                        class="fas fa-cube text-sage"
+                        style="color: var(--sage)"
+                    ></i>
+                    <span style="color: var(--dark)">Nagwammawa</span>
+                </a>
+                <nav class="hidden md:flex gap-8 text-sm">
+                    <a
+                        href="index.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage font-medium"
+                        >Home</a
+                    >
+                    <a
+                        href="about.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage"
+                        >About</a
+                    >
+                    <a
+                        href="services.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage"
+                        >Services</a
+                    >
+                    <a
+                        href="industries.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage"
+                        >Industries</a
+                    >
+                    <a
+                        href="track.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage"
+                        >Track</a
+                    >
+                    <a
+                        href="contact.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage"
+                        >Contact</a
+                    >
+                </nav>
+                <div class="flex gap-3">
+                    <a
+                        href="login.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage text-sm"
+                        >Login</a
+                    >
+                    <a href="register.html" class="btn-sage text-sm"
+                        >Register</a
+                    >
+                </div>
+                <button
+                    class="md:hidden text-dark text-xl"
+                    id="mobile-menu-btn"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <nav class="hidden mobile-nav bg-gray-50 border-t" id="mobile-nav">
+                <div
+                    class="max-w-7xl mx-auto px-6 py-3 flex flex-col gap-3 text-sm"
+                >
+                    <a
+                        href="index.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage py-2"
+                        >Home</a
+                    >
+                    <a
+                        href="about.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage py-2"
+                        >About</a
+                    >
+                    <a
+                        href="services.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage py-2"
+                        >Services</a
+                    >
+                    <a
+                        href="industries.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage py-2"
+                        >Industries</a
+                    >
+                    <a
+                        href="track.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage py-2"
+                        >Track</a
+                    >
+                    <a
+                        href="contact.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage py-2"
+                        >Contact</a
+                    >
+                    <a
+                        href="login.html"
+                        style="color: var(--dark)"
+                        class="hover:text-sage py-2"
+                        >Login</a
+                    >
+                    <a href="register.html" class="btn-sage text-center"
+                        >Register</a
+                    >
+                </div>
+            </nav>
+        </header>
+
+        <!-- HERO -->
+        <section class="min-h-screen bg-white flex items-center justify-center">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h1
+                    class="text-6xl md:text-7xl font-light"
+                    style="color: var(--dark)"
+                    class="mb-6 leading-tight"
+                >
+                    Reliable Logistics
+                    <span class="text-sage">Solutions</span> Across Africa
+                </h1>
+                <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Premium transportation and supply chain services for
+                    businesses of all sizes. Experience seamless shipping with
+                    our trusted network.
+                </p>
+                <div class="flex gap-4 justify-center flex-wrap">
+                    <a href="quote.html" class="btn-sage">Get a Quote</a>
+                    <a
+                        href="about.html"
+                        class="border-2 text-sage px-7 py-3 rounded hover:bg-sage hover:text-white"
+                        style="border-color: var(--sage)"
+                        >Learn More</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES PREVIEW -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2
+                    class="text-4xl font-light text-dark mb-16 text-center"
+                    style="color: var(--dark)"
+                >
+                    Our Services
+                </h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="rounded-lg hover:shadow-lg p-8"
+                        style="background-color: var(--cream)"
+                    >
+                        <div class="text-3xl text-sage mb-4">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-dark mb-3"
+                            style="color: var(--dark)"
+                        >
+                            Ground Transport
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Fast and reliable ground transportation across
+                            Nigeria and West Africa with real-time tracking.
+                        </p>
+                    </div>
+                    <div
+                        class="rounded-lg hover:shadow-lg p-8"
+                        style="background-color: var(--cream)"
+                    >
+                        <div class="text-3xl text-sage mb-4">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-dark mb-3"
+                            style="color: var(--dark)"
+                        >
+                            Warehousing
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Secure storage facilities with climate control and
+                            inventory management solutions.
+                        </p>
+                    </div>
+                    <div
+                        class="rounded-lg hover:shadow-lg p-8"
+                        style="background-color: var(--cream)"
+                    >
+                        <div class="text-3xl text-sage mb-4">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-dark mb-3"
+                            style="color: var(--dark)"
+                        >
+                            Logistics
+                        </h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            End-to-end supply chain solutions tailored to your
+                            business requirements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="text-white py-16" style="background-color: var(--sage)">
+            <div
+                class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-center"
+            >
+                <div>
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <p class="text-sm opacity-90">Daily Shipments</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">98%</div>
+                    <p class="text-sm opacity-90">On-Time Delivery</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">10K+</div>
+                    <p class="text-sm opacity-90">Happy Clients</p>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold mb-2">15+</div>
+                    <p class="text-sm opacity-90">Years Experience</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-white py-16">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2
+                    class="text-3xl font-light text-dark mb-8"
+                    style="color: var(--dark)"
+                >
+                    Ready to Ship?
+                </h2>
+                <a href="quote.html" class="btn-sage text-lg"
+                    >Request a Free Quote</a
+                >
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer style="background-color: var(--dark)" class="text-white py-12">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-8 mb-8 text-sm">
+                    <div>
+                        <h3 class="font-bold mb-4 text-sage">Nagwammawa</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed">
+                            Premium logistics and transportation solutions
+                            across Nigeria and West Africa.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li>
+                                <a
+                                    href="about.html"
+                                    class="hover:text-sage text-xs"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="services.html"
+                                    class="hover:text-sage text-xs"
+                                    >Services</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="track.html"
+                                    class="hover:text-sage text-xs"
+                                    >Track</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">Support</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li>
+                                <a
+                                    href="faq.html"
+                                    class="hover:text-sage text-xs"
+                                    >FAQ</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="contact.html"
+                                    class="hover:text-sage text-xs"
+                                    >Contact</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="careers.html"
+                                    class="hover:text-sage text-xs"
+                                    >Careers</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-4">Legal</h3>
+                        <ul class="space-y-2 text-gray-400">
+                            <li>
+                                <a
+                                    href="privacy.html"
+                                    class="hover:text-sage text-xs"
+                                    >Privacy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="terms.html"
+                                    class="hover:text-sage text-xs"
+                                    >Terms</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-gray-700 pt-8 text-center text-xs text-gray-400"
+                >
+                    <p>
+                        &copy; 2024 Nagwammawa Express. All rights reserved. |
+                        +234 800 123 4567
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileNav = document.getElementById("mobile-nav");
+            mobileMenuBtn?.addEventListener("click", () => {
+                mobileNav.classList.toggle("hidden");
+            });
+        </script>
+    </body>
+</html>
