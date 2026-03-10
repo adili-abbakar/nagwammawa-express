@@ -6,14 +6,14 @@
 @section('page-content')
     <!-- Banner -->
     <section id="banner">
-        {{-- <div class="inner">
+        <div class="inner">
             <h1>Nagwammawa Express</h1>
             <h2>Reliable Transport & Logistics Solutions</h2>
             <p>
                 Providing safe, efficient, and customer-focused transport and
                 logistics services across Nigeria and the West African sub-region.
             </p>
-        </div> --}}
+        </div>
         {{-- <video autoplay loop muted playsinline src="images/banner.mp4"></video> --}}
     </section>
 

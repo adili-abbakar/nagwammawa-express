@@ -4,11 +4,15 @@
 
 @section('page-content')
     <div id="heading">
-        <h1>'' Quotes</h1>
+        <h1><i class="fas fa-file-invoice"></i> Quotes</h1>
     </div>
+
 
     <div class="wrapper" id="main">
         <div class="inner">
+            <header class="special">
+                <p class="special">View and manage all your shipping quotes</p>
+            </header>
             <div class="content">
                 <h2><b>Quotes List</b></h2>
                 <div class="table-wrapper">
@@ -32,7 +36,8 @@
                                     <td>{{ date('D d M, Y', strtotime($quote->created_at)) }} </td>
                                     <td>{{ $quote->status }}</td>
                                     <td class="actions">
-                                        <a href="{{ route('quotes.show', $quote) }}" class="button small "><i                                                class="fas fa-eye"> </i> <span>View</span></a>
+                                        <a href="{{ route('quotes.show', $quote) }}" class="button small "><i
+                                                class="fas fa-eye"> </i> <span>View</span></a>
                                     </td>
                                 </tr>
                             @endforeach
