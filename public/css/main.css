@@ -422,11 +422,11 @@ hr {
 .inner {
     margin: 0 auto;
     width: 80rem;
-    max-width: calc(100% - 6rem);
+    max-width: calc(100% - 3rem);
 }
 @media screen and (max-width: 480px) {
     .inner {
-        max-width: calc(100% - 3rem);
+        max-width: calc(100% - 1.5rem);
     }
 }
 
@@ -3387,6 +3387,7 @@ body:before {
     padding: 0 1.25rem;
     text-decoration: none;
 }
+
 #header > nav > a {
     color: inherit;
     display: inline-block;
@@ -4007,6 +4008,10 @@ i {
     font-weight: bold;
 }
 
-.non-special{
+.non-special {
     text-align: start;
+}
+
+.bold {
+    font-weight: bolder;
 }

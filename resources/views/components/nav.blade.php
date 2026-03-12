@@ -12,6 +12,9 @@
             <li><a href="{{ route('login') }}">Login</a></li>
         @endguest
         @auth
+            @if (Auth::user()->role === 'admin')
+                <li><a href="{{ route('admin-panel.dashboard') }}">Admin Panel</a></li>
+            @endif
             <li>
                 <form action="{{ route('logout') }}" method="POST" style="display:inline;">
                     @csrf

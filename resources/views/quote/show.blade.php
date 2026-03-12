@@ -12,8 +12,8 @@
             <header class="special">
                 Created on: {{ date('D d M, Y', strtotime($quote->created_at)) }}
             </header>
-            <div class="row highlights">
-                <section class="inner col-8 col-12-medium">
+            <div class="row">
+                <section class="col-8 col-12-medium">
                     <div class="row-column">
                         <div class="content">
                             <header>
@@ -67,12 +67,12 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Quote Id</th>
-                                            <th>Customer</th>
-                                            <th>Item</th>
-                                            <th>status</th>
-                                            <th>date</th>
-                                            <th>Actions</th>
+                                            <th>Description</th>
+                                            <th>Qty</th>
+                                            <th>Weight</th>
+                                            <th>Dimensions</th>
+                                            <th>Price/Unit</th>
+                                            <th>Total</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="inner col-4 col-12-medium">
+                <section class="col-4 col-12-medium">
                     <div class="row-column">
                         <div class="content">
                             <header>
@@ -122,15 +122,24 @@
                             <header>
                                 <h3><i class="fas fa-price"></i> Payment Method</h3>
                             </header>
-                            <blockquote>
-                                <div class="summary-ctn">
-                                    <p><span>Method</span> <span>Bank Transfer</span></p>
-                                    <p><span>Status</span> <span class="rejected">paid</span></p>
-                                    <p><span>Paid On</span> <span>March 16, 2024</span></p>
+                            <div class="summary-ctn">
+                                <p><span>Method</span> <span>Bank Transfer</span></p>
+                                <p><span>Status</span> <span class="approved">paid</span></p>
+                                <p><span>Paid On</span> <span>March 16, 2024</span></p>
 
-                                    <p><span>Transaction ID </span> <span>TXN-20240316-001</span></p>
-                                </div>
-                            </blockquote>
+                                <p><span>Transaction ID </span> <span>TXN-20240316-001</span></p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <header>
+                                <h3><i class="fas fa-price"></i> Note</h3>
+                            </header>
+                            <p>
+                                Thank you for choosing Nagwammawa Express. We have prepared this quote based on your
+                                requirements. Please review all details carefully before proceeding with payment. If you
+                                have any questions, feel free to contact our sales team.
+                            </p>
                         </div>
                     </div>
                 </section>
